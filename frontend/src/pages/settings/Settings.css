@@ -1,0 +1,72 @@
+/* src/pages/settings/Settings.css */
+.settings-section {
+  margin-bottom: var(--spacing-lg);
+}
+
+.settings-section h3 {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  letter-spacing: 1px;
+  margin-bottom: var(--spacing-md);
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 8px;
+}
+
+.profile-details {
+  display: flex;
+  align-items: center;
+}
+
+.avatar-large {
+  width: 64px;
+  height: 64px;
+  border-radius: 32px;
+  background-color: var(--primary);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-right: var(--spacing-lg);
+}
+
+.settings-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text-muted {
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+/* Custom CSS Toggle Switch */
+.toggle-switch {
+  width: 50px;
+  height: 28px;
+  border-radius: 14px;
+  padding: 2px;
+  background-color: var(--border-color);
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.toggle-switch.on {
+  background-color: var(--success);
+}
+
+.toggle-thumb {
+  width: 24px;
+  height: 24px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.toggle-switch.on .toggle-thumb {
+  transform: translateX(22px);
+}
